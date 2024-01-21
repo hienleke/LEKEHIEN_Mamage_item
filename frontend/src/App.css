@@ -1,0 +1,52 @@
+/* App Component */
+body {
+     font-family: "Arial", sans-serif;
+     background-color: #f4f4f4;
+     margin: 0;
+     padding: 0;
+}
+
+.container {
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 20px;
+}
+
+h2 {
+     margin-bottom: 20px;
+}
+
+/* Reset default list styling */
+ul {
+     padding: 0;
+     margin: 0;
+}
+
+/* Global Button Style */
+button {
+     cursor: pointer;
+     font-size: 14px;
+}
+
+/* Header Styling */
+header {
+     background-color: #333;
+     color: white;
+     padding: 10px;
+     text-align: center;
+}
+
+header h1 {
+     margin: 0;
+}
+
+/* Footer Styling */
+footer {
+     background-color: #333;
+     color: white;
+     padding: 10px;
+     text-align: center;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+}

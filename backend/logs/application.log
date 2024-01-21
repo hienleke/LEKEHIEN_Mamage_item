@@ -1,0 +1,263 @@
+[2024-01-21T13:12:22.246] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-21T13:12:59.864] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:17:41.901] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:18:49.870] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:21:35.162] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:38:56.966] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:43:18.923] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:43:57.016] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:43:59.454] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 200,
+  body: '{"items":[{"id":3,"name":"Example Item","description":"This is an example item.","price":"149.99","status":"inactive","created_at":"2024-01-20T18:05:26.360Z","updated_at":"2024-01-21T05:50:16.832Z","CategoryId":null,"categoryId":1,"category":{"id":1,"name":"Category Name","description":"Category Description","status":"active","created_at":"2024-01-20T18:05:11.523Z","updated_at":"2024-01-20T18:05:11.523Z"}}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}
+[2024-01-21T13:47:38.313] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:47:41.038] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 401,
+  body: '"{\\"error\\":\\"Unauthorized: Invalid token\\"}"'
+}
+[2024-01-21T13:47:51.910] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-21T13:47:54.022] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '"{\\"success\\":true,\\"status\\":\\"Login successful\\",\\"token\\":\\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTgxOTY3NCwiZXhwIjoxNzA1ODIzMjc0fQ.pgJMUN3ZjeQ6EeE_5thCrS8sBNslb66LfK-69-JmG5U\\"}"'
+}
+[2024-01-21T13:48:07.609] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:48:09.890] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 200,
+  body: '"{\\"items\\":[{\\"id\\":3,\\"name\\":\\"Example Item\\",\\"description\\":\\"This is an example item.\\",\\"price\\":\\"149.99\\",\\"status\\":\\"inactive\\",\\"created_at\\":\\"2024-01-20T18:05:26.360Z\\",\\"updated_at\\":\\"2024-01-21T05:50:16.832Z\\",\\"CategoryId\\":null,\\"categoryId\\":1,\\"category\\":{\\"id\\":1,\\"name\\":\\"Category Name\\",\\"description\\":\\"Category Description\\",\\"status\\":\\"active\\",\\"created_at\\":\\"2024-01-20T18:05:11.523Z\\",\\"updated_at\\":\\"2024-01-20T18:05:11.523Z\\"}}],\\"totalItems\\":1,\\"totalPages\\":1,\\"currentPage\\":1}"'
+}
+[2024-01-21T13:48:48.400] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:48:50.200] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 200,
+  body: '{"items":[{"id":3,"name":"Example Item","description":"This is an example item.","price":"149.99","status":"inactive","created_at":"2024-01-20T18:05:26.360Z","updated_at":"2024-01-21T05:50:16.832Z","CategoryId":null,"categoryId":1,"category":{"id":1,"name":"Category Name","description":"Category Description","status":"active","created_at":"2024-01-20T18:05:11.523Z","updated_at":"2024-01-20T18:05:11.523Z"}}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}
+[2024-01-21T13:50:26.443] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:50:28.904] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 200,
+  body: '{\n' +
+    '  "items": [\n' +
+    '    {\n' +
+    '      "id": 3,\n' +
+    '      "name": "Example Item",\n' +
+    '      "description": "This is an example item.",\n' +
+    '      "price": "149.99",\n' +
+    '      "status": "inactive",\n' +
+    '      "created_at": "2024-01-20T18:05:26.360Z",\n' +
+    '      "updated_at": "2024-01-21T05:50:16.832Z",\n' +
+    '      "CategoryId": null,\n' +
+    '      "categoryId": 1,\n' +
+    '      "category": {\n' +
+    '        "id": 1,\n' +
+    '        "name": "Category Name",\n' +
+    '        "description": "Category Description",\n' +
+    '        "status": "active",\n' +
+    '        "created_at": "2024-01-20T18:05:11.523Z",\n' +
+    '        "updated_at": "2024-01-20T18:05:11.523Z"\n' +
+    '      }\n' +
+    '    }\n' +
+    '  ],\n' +
+    '  "totalItems": 1,\n' +
+    '  "totalPages": 1,\n' +
+    '  "currentPage": 1\n' +
+    '}'
+}
+[2024-01-21T13:50:39.564] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:52:01.288] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:52:06.141] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 200,
+  body: { items: [ [Object] ], totalItems: 1, totalPages: 1, currentPage: 1 }
+}
+[2024-01-21T13:52:57.271] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T13:53:01.733] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 200,
+  body: '{"items":[{"id":3,"name":"Example Item","description":"This is an example item.","price":"149.99","status":"inactive","created_at":"2024-01-20T18:05:26.360Z","updated_at":"2024-01-21T05:50:16.832Z","CategoryId":null,"categoryId":1,"category":{"id":1,"name":"Category Name","description":"Category Description","status":"active","created_at":"2024-01-20T18:05:11.523Z","updated_at":"2024-01-20T18:05:11.523Z"}}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}

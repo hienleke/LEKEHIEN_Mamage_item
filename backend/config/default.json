@@ -1,0 +1,31 @@
+{
+     "db": {
+          "url": "localhost",
+          "username": "root",
+          "password": "rootpass",
+          "name": "item",
+          "port": 5433
+     },
+
+     "app": {
+          "port": 3001
+     },
+     "cache": {
+          "port": 6378
+     },
+
+     "other": {
+          "debug": true,
+          "logLevel": "info"
+     },
+     "api": {
+          "secretKey": "hienleke",
+          "username": "hienle",
+          "password": "hienlefeedback"
+     },
+     "filter": {
+          "numPerPage": 20,
+          "active": "active",
+          "inactive": "inactive"
+     }
+}

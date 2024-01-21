@@ -1,0 +1,26 @@
+{
+     "development": {
+          "username": "root",
+          "password": "rootpass",
+          "database": "item",
+          "host": "127.0.0.1",
+          "dialect": "postgres",
+          "port": 5433
+     },
+     "test": {
+          "username": "root",
+          "password": "rootpass",
+          "database": "item",
+          "host": "127.0.0.1",
+          "dialect": "postgres",
+          "port": 5433
+     },
+     "production": {
+          "username": "root",
+          "password": "rootpass",
+          "database": "item",
+          "host": "127.0.0.1",
+          "dialect": "postgres",
+          "port": 5433
+     }
+}
