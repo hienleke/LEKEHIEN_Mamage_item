@@ -39,8 +39,6 @@ const ItemList = () => {
                if (filter.price) string_query += `&price.eq=${filter.price}`;
                if (filter.name) string_query += `&name.iLike=%${filter.name}%`;
                if (filter.category_name) string_query += `&category_name.iLike=%${filter.category_name}%`;
-               if (filter.created_at) string_query += `&created_at.eq=${filter.created_at}`;
-               if (filter.updated_at) string_query += `&updated_at.eq=${filter.updated_at}`;
 
                const response = await api.get(`/item/filter?page=${currentPage}${string_query}`);
 
@@ -126,14 +124,6 @@ const ItemList = () => {
                <FormControl>
                     <InputLabel>Category Name</InputLabel>
                     <Input value={filter.category_name} name="category_name" onChange={handleFilterChange} />
-               </FormControl>
-               <FormControl>
-                    <InputLabel>Create Date</InputLabel>
-                    <Input type="date" value={filter.created_at} name="created_at" onChange={handleFilterChange} />
-               </FormControl>
-               <FormControl>
-                    <InputLabel>Update Date</InputLabel>
-                    <Input type="date" value={filter.updated_at} name="updated_at" onChange={handleFilterChange} />
                </FormControl>
                <Button onClick={fetchItemsFilter}>Apply Filter</Button>
                <TableContainer component={Paper}>
