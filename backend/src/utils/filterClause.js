@@ -1,7 +1,6 @@
 // itemFilter.js
 const { Op } = require("sequelize");
 const validKeys_item = ["name", "status", "price", "created_at", "updated_at", "category_name", "category", "page", "sort", "limit"];
-const validKeys_category = ["name", "status", "created_at", "updated_at", "page", "sort", "limit"];
 
 const buildWhereItemClause = (queryParams) => {
      let whereClause = {};
@@ -15,25 +14,8 @@ const buildWhereItemClause = (queryParams) => {
           if (!operatorMapping[`${KeyandOperator[1]}`]) {
                throw new Error("Invalid 'operator' parameter. ", KeyandOperator[1]);
           }
-          switch (key) {
-               case "category":
-                    whereClause["$Category.id$"] = queryParams[item];
-                    break;
-               case "category_name":
-                    whereClause["$Category.name$"] = {
-                         [operatorMapping[`${operator}`]]: queryParams[item],
-                    };
-                    break;
-               case "price":
-               case "status":
-               case "name":
-               case "created_at":
-               case "updated_at":
-                    whereClause[key] = { [operatorMapping[`${operator}`]]: queryParams[item] };
-               default:
-                    // Handle other cases if needed
-                    break;
-          }
+
+          whereClause[key] = { [operatorMapping[`${operator}`]]: queryParams[item] };
      }
 
      return whereClause;
@@ -59,31 +41,4 @@ const operatorMapping = {
      // Add more operators as needed
 };
 
-const buildWhereCategoryClause = (queryParams) => {
-     let whereClause = {};
-     for (let item in queryParams) {
-          let KeyandOperator = item.split(".");
-          let key = KeyandOperator[0];
-          let operator = KeyandOperator[1];
-          if (!validKeys_category.includes(KeyandOperator[0])) {
-               throw new Error("Invalid 'key' parameter. ", KeyandOperator[0]);
-          }
-          if (!operatorMapping[`${KeyandOperator[1]}`]) {
-               throw new Error("Invalid 'operator' parameter. ", KeyandOperator[1]);
-          }
-          switch (key) {
-               case "status":
-               case "name":
-               case "created_at":
-               case "updated_at":
-                    whereClause[key] = { [operatorMapping[`${operator}`]]: queryParams[item] };
-               default:
-                    // Handle other cases if needed
-                    break;
-          }
-     }
-
-     return whereClause;
-};
-
-module.exports = { buildWhereItemClause, buildWhereCategoryClause };
+module.exports = { buildWhereItemClause };

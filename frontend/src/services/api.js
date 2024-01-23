@@ -6,7 +6,7 @@ const api = axios.create({
 
 const fetchToken = async () => {
      try {
-          const response = await api.post("/auth/login", {
+          const response = await api.post("/login", {
                username: "hienle",
                password: "hienlefeedback",
           });
@@ -28,7 +28,7 @@ const fetchToken = async () => {
 
 // Function to set the token in the headers
 const setAuthToken = async (token) => {
-     api.defaults.headers.common["authorization"] = `${token}`;
+     api.defaults.headers["authorization"] = `${token}`;
 };
 
 export default api;

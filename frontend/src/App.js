@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import CategoryList from "./components/Category/CategoryList";
 import ItemList from "./components/Item/ItemList";
 
 const App = () => {
@@ -8,8 +7,7 @@ const App = () => {
           <Router>
                <div>
                     <Routes>
-                         <Route path="/categories" element={<CategoryList />} />
-                         <Route path="/items" element={<ItemList />} />
+                         <Route path="/item" element={<ItemList />} />
                          {/* Add more routes as needed */}
                          <Route path="/" element={<ItemList />} />
                     </Routes>

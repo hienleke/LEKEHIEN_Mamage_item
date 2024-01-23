@@ -1,26 +1,28 @@
-// ItemForm.js
 import React, { useState, useEffect } from "react";
 import { Dialog, DialogTitle, DialogContent, DialogActions, Button, TextField, Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 import "./ItemForm.css"; // Assuming you have some custom styles here
 import api from "../../services/api";
 
-const ItemForm = ({ editItemId, onClose, onSubmit }) => {
+const ItemForm = ({ editItemId, editCategoryName, onClose, onSubmit }) => {
      const [formData, setFormData] = useState({
           name: "",
           description: "",
           price: 0,
           status: "active",
+          category_name: null,
      });
 
      useEffect(() => {
+          // Fetch categories when the form is opened
+
           // Fetch existing item data when editing
           if (editItemId) {
                // Assuming you have an API endpoint to get item details by ID
                // Adjust the API endpoint accordingly
                api.get(`/items/${editItemId}`)
                     .then((response) => {
-                         const { name, description, price, status } = response.data;
-                         setFormData({ name, description, price, status });
+                         const { name, description, price, status, categoryId } = response.data;
+                         setFormData({ name, description, price, status, categoryId });
                     })
                     .catch((error) => {
                          console.error("Error fetching item details:", error);
@@ -55,6 +57,8 @@ const ItemForm = ({ editItemId, onClose, onSubmit }) => {
                               <MenuItem value="inactive">inactive</MenuItem>
                          </Select>
                     </FormControl>
+
+                    <TextField label="Category" name="category_name" value={formData.category_name} onChange={handleInputChange} />
                </DialogContent>
                <DialogActions>
                     <Button onClick={onClose}>Cancel</Button>

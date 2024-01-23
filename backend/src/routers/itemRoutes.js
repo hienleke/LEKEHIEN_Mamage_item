@@ -21,7 +21,4 @@ router.put("/:id", auth, itemController.updateItem);
 // Delete an item
 router.delete("/:id", auth, itemController.deleteItem);
 
-// Filter items by price and category with pagination
-router.get("/filter", auth, itemController.getFilter);
-
 module.exports = router;

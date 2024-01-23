@@ -1,6 +1,5 @@
 // backend/controllers/itemController.js
 const { Op } = require("sequelize");
-const Category = require("../models/category");
 const Item = require("../models/item");
 const { buildWhereItemClause } = require("../utils/filterClause");
 const config = require("../utils/config");
@@ -12,11 +11,7 @@ const itemController = {
                const items = await Item.findAndCountAll({
                     limit: pageSize,
                     offset: (page - 1) * pageSize,
-                    include: [
-                         {
-                              model: Category,
-                         },
-                    ],
+                    where: { status: "active" },
                });
 
                res.status(200).json({
@@ -52,9 +47,9 @@ const itemController = {
      },
 
      createItem: async (req, res) => {
-          const { name, description, price, CategoryId } = req.body;
+          const { name, description, price, category_name } = req.body;
           try {
-               const newItem = await Item.create({ name, description, price, CategoryId });
+               const newItem = await Item.create({ name, description, price, category_name });
                res.status(201).json(newItem);
           } catch (error) {
                console.error("Error creating item:", error);
@@ -64,14 +59,14 @@ const itemController = {
 
      updateItem: async (req, res) => {
           const itemId = req.params.id;
-          const { name, description, price, categoryId, status } = req.body;
+          const { name, description, price, status, category_name } = req.body;
           try {
                const item = await Item.findByPk(itemId);
                if (!item) {
                     return res.status(404).json({ error: "Item not found" });
                }
                if (status != "active" || status != "inactive") return res.status(404).json({ error: "status invalid " });
-               await item.update({ name, description, price, categoryId, status });
+               await item.update({ name, description, price, status, category_name });
                res.status(200).json(item);
           } catch (error) {
                console.error("Error updating item:", error);
@@ -104,17 +99,13 @@ const itemController = {
      getFilter: async (req, res) => {
           try {
                const page = req.query.page || 1;
+               delete req.query.page;
                pageSize = config.get("filter.pageSize") || 10;
                const whereClause = buildWhereItemClause(req.query);
                const items = await Item.findAndCountAll({
                     where: whereClause,
                     limit: pageSize,
                     offset: (page - 1) * pageSize,
-                    include: [
-                         {
-                              model: Category,
-                         },
-                    ],
                });
 
                res.status(200).json({

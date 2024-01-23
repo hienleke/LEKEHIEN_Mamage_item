@@ -19,6 +19,9 @@ const Item = sequelize.define(
                type: DataTypes.ENUM("active", "inactive"),
                defaultValue: "active",
           },
+          category_name: {
+               type: DataTypes.TEXT,
+          },
      },
      {
           timestamps: true,

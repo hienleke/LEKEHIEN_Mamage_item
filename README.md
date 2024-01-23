@@ -16,17 +16,15 @@ These instructions will help you set up and run the project.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/hienleke/LEKEHIEN_Manage_item.git
+cd LEKEHIEN_Manage_item
 ```
 
 ### 2. Build and Run Docker Containers
 
 ```
-bash
-Copy code
-docker-compose up --build
-This command will build and start the Docker containers for the server, PostgreSQL database, and Redis.
+docker-compose up -d
+This command will build and start the Docker containers for  PostgreSQL database.
 ```
 
 ### 3. Set Up the Server
@@ -71,7 +69,7 @@ Server: http://localhost:3001
 Frontend: http://localhost:3000
 Server Configuration
 Database
-The server is configured with Sequelize and PostgreSQL for a many-to-one relationship. Migrations and seed data have been set up.
+The server is configured with Sequelize and PostgreSQL . Migrations and seed data have been set up.
 
 Authentication
 Authentication is implemented using JSON Web Tokens (JWT). Make sure to include the token in the headers for authenticated requests.
@@ -83,5 +81,7 @@ Testing
 The server includes test cases using Jest. Run the tests with the following command:
 
 ```
-    npm test
+# Navigate to the server directory
+cd server
+npm test
 ```

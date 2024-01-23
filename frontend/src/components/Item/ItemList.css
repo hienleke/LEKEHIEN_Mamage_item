@@ -1,15 +1,43 @@
 /* ItemList.css */
-
-.container {
-     margin: 20px;
-}
-
 h2 {
      color: #333;
 }
 
-.addButton {
+div {
+     margin: 20px;
+}
+
+Button {
      margin-bottom: 10px;
+}
+
+FormControl {
+     margin-right: 10px;
+}
+
+TableContainer {
+     margin-top: 20px;
+}
+
+Table {
+     width: 100%;
+     border-collapse: collapse;
+}
+
+TableHead,
+TableBody,
+TableRow,
+TableCell {
+     border: 1px solid #ddd;
+     padding: 8px;
+}
+
+TableHead {
+     background-color: #f2f2f2;
+}
+
+TableRow:hover {
+     background-color: #f5f5f5;
 }
 
 .pagination {
@@ -23,17 +51,23 @@ h2 {
      margin: 0 5px;
 }
 
-.pagination button {
-     cursor: pointer;
-     padding: 5px 10px;
-     background-color: #007bff;
-     color: #fff;
-     border: none;
-     border-radius: 3px;
+.pagination li.active {
+     font-weight: bold;
 }
 
-.pagination button:hover {
-     background-color: #0056b3;
-}
-
-/* Add more styles as needed */
+FormControl {
+     margin-right: 10px;
+     margin-bottom: 10px;
+   }
+   
+   /* Apply responsive styles for smaller screens */
+   @media screen and (max-width: 600px) {
+     FormControl {
+       margin-right: 0;
+       width: 100%;
+     }
+   
+     InputLabel, Input, Select {
+       width: 100%;
+     }
+   }

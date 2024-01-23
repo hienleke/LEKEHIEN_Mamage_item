@@ -1,12 +1,12 @@
 const { Op } = require("sequelize");
-const { buildWhereItemClause, buildWhereCategoryClause } = require("../src/utils/filterClause");
+const { buildWhereItemClause } = require("../src/utils/filterClause");
 
 describe("buildWhereItemClause", () => {
      it("should build correct where clause for items", () => {
           const queryParams = {
                "name.eq": "ItemName",
                "price.gte": 10,
-               "category.eq": 1,
+               "category_name.eq": "xxx",
           };
 
           const result = buildWhereItemClause(queryParams);
@@ -14,7 +14,6 @@ describe("buildWhereItemClause", () => {
           expect(result).toEqual({
                name: { [Op.eq]: "ItemName" },
                price: { [Op.gte]: 10 },
-               "$Category.id$": 1,
           });
      });
 
@@ -43,32 +42,4 @@ describe("buildWhereItemClause", () => {
      });
 
      // Add more test cases as needed
-});
-
-describe("buildWhereCategoryClause", () => {
-     it("should build correct where clause for categories", () => {
-          const queryParams = {
-               "name.eq": "CategoryName",
-               "status.ne": "inactive",
-          };
-
-          const result = buildWhereCategoryClause(queryParams);
-
-          expect(result).toEqual({
-               name: { [Op.eq]: "CategoryName" },
-               status: { [Op.ne]: "inactive" },
-          });
-     });
-
-     it('should handle "like" operator for name', () => {
-          const queryParams = {
-               "name.like": "Category",
-          };
-
-          const result = buildWhereCategoryClause(queryParams);
-
-          expect(result).toEqual({
-               name: { [Op.like]: "Category" },
-          });
-     });
 });
