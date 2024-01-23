@@ -1,28 +1,17 @@
 // backend/controllers/categoryController.js
 const { Op } = require("sequelize");
 const Category = require("../models/category");
+const config = require("../utils/config");
 const logger = require("../utils/logger");
-const buildWhereCategoryClause = require("../utils/filterClause");
+const { buildWhereCategoryClause } = require("../utils/filterClause");
 
 const categoryController = {
      getAllCategories: async (req, res) => {
           try {
-               const { status, name, page = 1, pageSize = 10 } = req.query;
-
-               const whereClause = {};
-
-               if (status) {
-                    whereClause.status = status;
-               }
-
-               if (name) {
-                    whereClause.name = {
-                         [Op.iLike]: `%${name}%`, // Case-insensitive search
-                    };
-               }
+               const page = req.query.page || 1;
+               let pageSize = config.get("filter.pageSize") || 10;
 
                const categories = await Category.findAndCountAll({
-                    where: whereClause,
                     limit: pageSize,
                     offset: (page - 1) * pageSize,
                });
@@ -108,19 +97,9 @@ const categoryController = {
      // Filter categories by status and name with pagination
      getFilter: async (req, res) => {
           try {
-               const { status, name, page = 1, pageSize = 10 } = req.query;
-
-               const whereClause = {};
-
-               if (status) {
-                    whereClause.status = status;
-               }
-
-               if (name) {
-                    whereClause.name = {
-                         [Op.iLike]: `%${name}%`, // Case-insensitive search
-                    };
-               }
+               const page = req.query.page || 1;
+               let pageSize = config.get("filter.pageSize") || 10;
+               const whereClause = buildWhereCategoryClause(req.query);
 
                const categories = await Category.findAndCountAll({
                     where: whereClause,

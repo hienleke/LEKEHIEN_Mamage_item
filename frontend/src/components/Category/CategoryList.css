@@ -1,0 +1,33 @@
+/* CategoryList.css */
+.category-list-container {
+     margin-top: 20px;
+}
+
+.category-list-container h2 {
+     color: #333;
+}
+
+.category-list-container input {
+     padding: 8px;
+     margin-bottom: 10px;
+}
+
+.category-list-container ul {
+     list-style-type: none;
+     padding: 0;
+}
+
+.category-list-container li {
+     background-color: #fff;
+     padding: 10px;
+     margin-bottom: 10px;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-list-container li:hover {
+     background-color: #f0f0f0;
+}
+
+.category-form-container {
+     margin-top: 20px;
+}

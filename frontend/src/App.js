@@ -1,16 +1,21 @@
-import "./App.css";
-import ItemForm from "./components/ItemForm";
-import IteamList from "./components/ItemList";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import CategoryList from "./components/Category/CategoryList";
+import ItemList from "./components/Item/ItemList";
 
-function App() {
+const App = () => {
      return (
-          <div className="App">
-               <div className="container">
-                    <ItemForm />
-                    <IteamList />
+          <Router>
+               <div>
+                    <Routes>
+                         <Route path="/categories" element={<CategoryList />} />
+                         <Route path="/items" element={<ItemList />} />
+                         {/* Add more routes as needed */}
+                         <Route path="/" element={<ItemList />} />
+                    </Routes>
                </div>
-          </div>
+          </Router>
      );
-}
+};
 
 export default App;

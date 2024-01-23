@@ -3,10 +3,11 @@ const bodyParser = require("body-parser");
 const itemRouters = require("../routers/itemRoutes");
 const categoryRouters = require("../routers/categoryRouters");
 const authRoutes = require("../routers/authRoutes");
+const cors = require("cors");
 const { logRequest, logResponse } = require("../middleware/logMiddleware");
 function createServer() {
      const app = express();
-
+     app.use(cors());
      app.use(bodyParser.json());
      app.use(logRequest);
      app.use(logResponse);

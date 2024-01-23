@@ -11,7 +11,7 @@ const sequelize = new Sequelize({
      username: username,
      password: password,
      database: name,
-     logging: false,
+     logging: true,
 });
 
 const connectDB = async () => {
@@ -22,7 +22,6 @@ const connectDB = async () => {
                .sync({ force: false }) // Use { force: true } in development to drop existing tables
                .then(() => {
                     console.log("Database synchronized");
-                    //  setupAssociation();
                })
                .catch((error) => {
                     console.error("Error syncing database:", error);

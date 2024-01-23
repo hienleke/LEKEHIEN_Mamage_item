@@ -2,33 +2,22 @@
 const { Op } = require("sequelize");
 const Category = require("../models/category");
 const Item = require("../models/item");
+const { buildWhereItemClause } = require("../utils/filterClause");
+const config = require("../utils/config");
 
 const itemController = {
      getAllItems: async (req, res) => {
           try {
-               const { price, categoryId, page = 1, pageSize = 10 } = req.query;
-
-               const whereClause = {};
-               if (price) {
-                    whereClause.price = {
-                         [Op.lte]: price,
-                    };
-               }
-
-               if (categoryId) {
-                    whereClause.categoryId = categoryId;
-               }
-
+               const page = req.query.page || 1;
+               let pageSize = config.get("filter.pageSize") || 10;
                const items = await Item.findAndCountAll({
-                    where: whereClause,
                     limit: pageSize,
                     offset: (page - 1) * pageSize,
                     include: [
                          {
                               model: Category,
-                              as: "category", // Specify the alias
                          },
-                    ], // Include associated Category in the result
+                    ],
                });
 
                res.status(200).json({
@@ -50,9 +39,8 @@ const itemController = {
                     include: [
                          {
                               model: Category,
-                              as: "category", // Specify the alias
                          },
-                    ], // Include associated Category in the result
+                    ],
                });
                if (!item) {
                     return res.status(404).json({ error: "Item not found" });
@@ -65,9 +53,9 @@ const itemController = {
      },
 
      createItem: async (req, res) => {
-          const { name, description, price, categoryId } = req.body;
+          const { name, description, price, CategoryId } = req.body;
           try {
-               const newItem = await Item.create({ name, description, price, categoryId });
+               const newItem = await Item.create({ name, description, price, CategoryId });
                res.status(201).json(newItem);
           } catch (error) {
                console.error("Error creating item:", error);
@@ -93,19 +81,15 @@ const itemController = {
 
      deleteItem: async (req, res) => {
           const itemId = req.params.id;
-
           try {
                const item = await Item.findByPk(itemId);
-
                if (!item) {
                     return res.status(404).json({ error: "Item not found" });
                }
 
-               // Update the status to "inactive" instead of destroying the item
                item.status = "inactive";
                await item.save();
 
-               // Return the updated item
                res.status(200).json({
                     status: "success",
                     deletedItem: item,
@@ -119,20 +103,9 @@ const itemController = {
      // Filter items by price and category with pagination
      getFilter: async (req, res) => {
           try {
-               const { price, categoryId, page = 1, pageSize = 10 } = req.query;
-
-               const whereClause = {};
-
-               if (price) {
-                    whereClause.price = {
-                         [Op.lte]: price,
-                    };
-               }
-
-               if (categoryId) {
-                    whereClause.categoryId = categoryId;
-               }
-
+               const page = req.query.page || 1;
+               pageSize = config.get("filter.pageSize") || 10;
+               const whereClause = buildWhereItemClause(req.query);
                const items = await Item.findAndCountAll({
                     where: whereClause,
                     limit: pageSize,
@@ -140,7 +113,6 @@ const itemController = {
                     include: [
                          {
                               model: Category,
-                              as: "category", // Specify the alias
                          },
                     ],
                });
@@ -153,7 +125,7 @@ const itemController = {
                });
           } catch (error) {
                console.error("Error fetching filtered items:", error);
-               res.status(500).json({ error: "Internal server error" });
+               res.status(500).json({ error: "Internal server error", message: error.message });
           }
      },
 };

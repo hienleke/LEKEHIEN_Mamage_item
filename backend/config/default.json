@@ -24,7 +24,7 @@
           "password": "hienlefeedback"
      },
      "filter": {
-          "numPerPage": 20,
+          "pageSize": 10,
           "active": "active",
           "inactive": "inactive"
      }

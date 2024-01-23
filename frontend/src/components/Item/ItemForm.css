@@ -1,0 +1,23 @@
+/* ItemForm.css */
+
+.dialogTitle {
+     text-align: center;
+}
+
+.dialogContent {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.textInput {
+     width: 100%;
+}
+
+.dialogActions {
+     display: flex;
+     justify-content: flex-end;
+     margin-top: 10px;
+}
+
+/* Add more styles as needed */

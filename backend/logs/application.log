@@ -261,3 +261,2592 @@
   status: 200,
   body: '{"items":[{"id":3,"name":"Example Item","description":"This is an example item.","price":"149.99","status":"inactive","created_at":"2024-01-20T18:05:26.360Z","updated_at":"2024-01-21T05:50:16.832Z","CategoryId":null,"categoryId":1,"category":{"id":1,"name":"Category Name","description":"Category Description","status":"active","created_at":"2024-01-20T18:05:11.523Z","updated_at":"2024-01-20T18:05:11.523Z"}}],"totalItems":1,"totalPages":1,"currentPage":1}'
 }
+[2024-01-21T19:34:17.520] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item?name=hien',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { name: 'hien' }
+}
+[2024-01-21T19:34:30.112] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item?name=hien',
+  status: 401,
+  body: '{"error":"Unauthorized: Invalid token"}'
+}
+[2024-01-21T19:35:20.679] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?name=hien',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { name: 'hien' }
+}
+[2024-01-21T19:35:20.958] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?name=hien',
+  status: 401,
+  body: '{"error":"Unauthorized: Invalid token"}'
+}
+[2024-01-21T19:35:30.608] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-21T19:35:30.674] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTg0MDUzMCwiZXhwIjoxNzA1ODQ0MTMwfQ.A0XtLCs7niIGyHMGnxwt1GFIJaiNUOe0QP4j8g8RNy0"}'
+}
+[2024-01-21T19:35:49.823] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?name=hien',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { name: 'hien' }
+}
+[2024-01-21T19:35:56.141] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?name=hien',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T19:36:15.278] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?name=hien',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { name: 'hien' }
+}
+[2024-01-21T19:36:15.686] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?name=hien',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T19:38:50.261] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=adfas&fprice=1231311',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'adfas', fprice: '1231311' }
+}
+[2024-01-21T19:38:50.523] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=adfas&fprice=1231311',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T19:43:52.801] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=adfas&fprice=1231311',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'adfas', fprice: '1231311' }
+}
+[2024-01-21T19:43:53.550] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=adfas&fprice=1231311',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T19:44:50.361] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=adfas&fprice=1231311',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'adfas', fprice: '1231311' }
+}
+[2024-01-21T19:44:50.534] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=adfas&fprice=1231311',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T19:50:35.622] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=adfas&fprice=1231311',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'adfas', fprice: '1231311' }
+}
+[2024-01-21T19:50:35.946] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=adfas&fprice=1231311',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T19:51:39.581] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=adfas&fprice=1231311',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'adfas', fprice: '1231311' }
+}
+[2024-01-21T19:51:39.866] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=adfas&fprice=1231311',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T20:01:47.395] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'exampleName', fprice: 'examplePrice' }
+}
+[2024-01-21T20:01:48.005] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T20:02:06.064] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-21T20:02:06.115] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTg0MjEyNiwiZXhwIjoxNzA1ODQ1NzI2fQ.ZhGtBuj-ZUN6HZHEAfcJ0Y2D4AopVF6Eo4KSsbPxBKs"}'
+}
+[2024-01-21T20:02:17.740] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'exampleName', fprice: 'examplePrice' }
+}
+[2024-01-21T20:02:17.841] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T20:36:44.418] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'exampleName', fprice: 'examplePrice' }
+}
+[2024-01-21T20:36:45.214] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T21:22:00.979] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'exampleName', fprice: 'examplePrice' }
+}
+[2024-01-21T21:22:01.045] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  status: 401,
+  body: '{"error":"Unauthorized: Invalid token"}'
+}
+[2024-01-21T21:22:09.286] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-21T21:22:09.297] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTg0NjkyOSwiZXhwIjoxNzA1ODUwNTI5fQ.-m7IRA9nywi-UwQpwyB6Qkj5nD-ugRwDN1gAy0BnlX8"}'
+}
+[2024-01-21T21:22:18.789] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'exampleName', fprice: 'examplePrice' }
+}
+[2024-01-21T21:24:01.418] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T21:24:34.849] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/1',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T21:24:44.683] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/1',
+  status: 404,
+  body: '{"error":"Item not found"}'
+}
+[2024-01-21T21:25:23.330] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filt',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T21:25:39.592] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filt',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T21:25:52.149] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filt',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T21:25:58.609] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filt',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T21:26:16.187] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-21T21:26:40.732] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T21:27:02.887] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'exampleName', fprice: 'examplePrice' }
+}
+[2024-01-21T21:27:28.177] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-21T21:28:29.629] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'exampleName', fprice: 'examplePrice' }
+}
+[2024-01-21T21:28:32.942] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  status: 500,
+  body: '{"error":"Internal server error","message":{}}'
+}
+[2024-01-21T21:29:44.249] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'exampleName', fprice: 'examplePrice' }
+}
+[2024-01-21T21:29:48.997] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  status: 500,
+  body: '{"error":"Internal server error","message":{}}'
+}
+[2024-01-21T21:29:59.724] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'exampleName', fprice: 'examplePrice' }
+}
+[2024-01-21T21:30:09.888] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  status: 500,
+  body: '{"error":"Internal server error","message":{}}'
+}
+[2024-01-21T21:32:44.777] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { page: '1', name: 'exampleName', fprice: 'examplePrice' }
+}
+[2024-01-21T21:32:57.038] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?page=1&name=exampleName&fprice=examplePrice',
+  status: 500,
+  body: '{"error":"Internal server error","message":{}}'
+}
+[2024-01-21T23:02:00.416] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&fprice=149',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'inactive', name: 'exampleName', fprice: '149' }
+}
+[2024-01-21T23:02:00.500] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&fprice=149',
+  status: 401,
+  body: '{"error":"Unauthorized: Invalid token"}'
+}
+[2024-01-21T23:02:06.715] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-21T23:02:06.734] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTg1MjkyNiwiZXhwIjoxNzA1ODU2NTI2fQ.fkoLE7qcu-1FECi-ybL-EnxKUFLqFAoQNkkA1BnMRz4"}'
+}
+[2024-01-21T23:02:21.458] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&fprice=149',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'inactive', name: 'exampleName', fprice: '149' }
+}
+[2024-01-21T23:02:29.475] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&fprice=149',
+  status: 500,
+  body: '{"error":"Internal server error","message":{}}'
+}
+[2024-01-21T23:07:10.167] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&fprice=149',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'inactive', name: 'exampleName', fprice: '149' }
+}
+[2024-01-21T23:07:18.702] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&fprice=149',
+  status: 500,
+  body: '{"error":"Internal server error","message":{}}'
+}
+[2024-01-21T23:07:30.073] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&fprice=149',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'inactive', name: 'exampleName', fprice: '149' }
+}
+[2024-01-21T23:07:36.634] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&fprice=149',
+  status: 500,
+  body: '{"error":"Internal server error","message":{}}'
+}
+[2024-01-21T23:07:59.052] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&fprice=149',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'inactive', name: 'exampleName', fprice: '149' }
+}
+[2024-01-21T23:08:16.628] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&fprice=149',
+  status: 500,
+  body: '{"error":"Internal server error","message":{}}'
+}
+[2024-01-21T23:09:02.953] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&fprice=149',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'inactive', name: 'exampleName', fprice: '149' }
+}
+[2024-01-21T23:12:11.325] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&fprice=149',
+  status: 500,
+  body: '{"error":"Internal server error","message":{}}'
+}
+[2024-01-21T23:13:09.496] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&price=149',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'inactive', name: 'exampleName', price: '149' }
+}
+[2024-01-21T23:13:26.742] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&price=149',
+  status: 500,
+  body: '{"error":"Internal server error","message":"column Item.status,name,price does not exist"}'
+}
+[2024-01-21T23:25:12.249] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&price=149',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'inactive', name: 'exampleName', price: '149' }
+}
+[2024-01-21T23:25:30.737] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&price=149',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-21T23:27:02.050] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&price=149',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'inactive', name: 'exampleName', price: '149' }
+}
+[2024-01-21T23:27:10.489] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=inactive&name=exampleName&price=149',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-21T23:28:10.295] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=active&name=Category%20Name&price=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'active', name: 'Category Name', price: '900' }
+}
+[2024-01-21T23:28:13.472] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=active&name=Category%20Name&price=900',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-21T23:29:14.105] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=active&name=Example%20Item&price=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'active', name: 'Example Item', price: '900' }
+}
+[2024-01-21T23:29:16.938] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=active&name=Example%20Item&price=900',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-21T23:34:06.862] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=active&name=Example%20Item&price=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'active', name: 'Example Item', price: '900' }
+}
+[2024-01-21T23:34:14.998] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=active&name=Example%20Item&price=900',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-21T23:38:56.465] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status=active&name=Example%20Item&price=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'active', name: 'Example Item', price: '900' }
+}
+[2024-01-21T23:39:02.133] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status=active&name=Example%20Item&price=900',
+  status: 500,
+  body: '{"error":"Internal server error","message":"operator does not exist: \\"enum_Items_status\\" ~~* unknown"}'
+}
+[2024-01-22T01:13:42.316] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-22T01:13:42.472] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 401,
+  body: '{"error":"Unauthorized: Invalid token"}'
+}
+[2024-01-22T01:25:14.886] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item/filter?status=active&name=Example%20Item&price=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { status: 'active', name: 'Example Item', price: '900' }
+}
+[2024-01-22T01:25:14.962] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item/filter?status=active&name=Example%20Item&price=900',
+  status: 404,
+  body: ''
+}
+[2024-01-22T09:17:53.594] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-22T09:17:53.668] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTg4OTg3MywiZXhwIjoxNzA1ODkzNDczfQ.b9g4arDIKPLRyzPMXO92evYEoqzLEPwTJXl4d9iGa6Y"}'
+}
+[2024-01-22T09:18:09.390] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category',
+  body: {},
+  query: {}
+}
+[2024-01-22T09:18:09.557] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category',
+  status: 200,
+  body: '{"categories":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T16:14:10.638] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.eq': 'Example Item',
+    'price.gt': '900'
+  }
+}
+[2024-01-22T16:14:10.892] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  status: 401,
+  body: '{"error":"Unauthorized: Invalid token"}'
+}
+[2024-01-22T16:14:17.833] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-22T16:14:17.861] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTkxNDg1NywiZXhwIjoxNzA1OTE4NDU3fQ.Z3no8lsOhYg8ZC7aCtNBQY5GduBCqXFWd87O2s100sw"}'
+}
+[2024-01-22T16:14:22.088] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.eq': 'Example Item',
+    'price.gt': '900'
+  }
+}
+[2024-01-22T16:14:23.464] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  status: 500,
+  body: '{"error":"Internal server error","message":"operator does not exist: \\"enum_Items_status\\" ~~* unknown"}'
+}
+[2024-01-22T16:14:48.619] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.eq': 'Example Item',
+    'price.gt': '900'
+  }
+}
+[2024-01-22T16:14:48.773] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  status: 500,
+  body: '{"error":"Internal server error","message":"operator does not exist: \\"enum_Items_status\\" ~~* unknown"}'
+}
+[2024-01-22T16:16:02.059] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.eq': 'Example Item',
+    'price.gt': '900'
+  }
+}
+[2024-01-22T16:16:02.277] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  status: 500,
+  body: '{"error":"Internal server error","message":"operator does not exist: \\"enum_Items_status\\" ~~* unknown"}'
+}
+[2024-01-22T16:16:12.252] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.eq': 'Example Item',
+    'price.gt': '900'
+  }
+}
+[2024-01-22T16:16:12.323] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  status: 500,
+  body: '{"error":"Internal server error","message":"operator does not exist: \\"enum_Items_status\\" ~~* unknown"}'
+}
+[2024-01-22T16:17:28.635] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.eq': 'Example Item',
+    'price.gt': '900'
+  }
+}
+[2024-01-22T16:30:37.161] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  status: 500,
+  body: '{"error":"Internal server error","message":"operator does not exist: \\"enum_Items_status\\" ~~* unknown"}'
+}
+[2024-01-22T16:38:06.495] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.eq': 'Example Item',
+    'price.gt': '900'
+  }
+}
+[2024-01-22T16:38:16.706] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  status: 500,
+  body: '{"error":"Internal server error","message":"op is not defined"}'
+}
+[2024-01-22T16:39:54.093] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.eq': 'Example Item',
+    'price.gt': '900'
+  }
+}
+[2024-01-22T16:39:58.540] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  status: 500,
+  body: `{"error":"Internal server error","message":"Cannot read properties of undefined (reading '1')"}`
+}
+[2024-01-22T16:46:55.068] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.eq': 'Example Item',
+    'price.gt': '900'
+  }
+}
+[2024-01-22T16:47:16.102] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.eq=Example%20Item&price.gt=900',
+  status: 500,
+  body: '{"error":"Internal server error","message":"column \\"nan\\" does not exist"}'
+}
+[2024-01-22T16:48:24.205] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=Example%20Item&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.iLike': 'Example Item',
+    'price.gt': '900'
+  }
+}
+[2024-01-22T16:48:59.176] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=Example%20Item&price.gt=900',
+  status: 500,
+  body: '{"error":"Internal server error","message":"column \\"nan\\" does not exist"}'
+}
+[2024-01-22T16:51:39.484] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=Example%20Item&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.iLike': 'Example Item',
+    'price.gt': '900'
+  }
+}
+[2024-01-22T16:51:52.181] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=Example%20Item&price.gt=900',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T16:55:01.203] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'price.gt': '900' }
+}
+[2024-01-22T16:55:25.088] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&price.gt=900',
+  status: 200,
+  body: '{"items":[{"id":3,"name":"asdfas","description":"sadfsda","price":"1000.00","status":"active","created_at":"2016-06-23T02:10:25.000Z","updated_at":"2016-06-23T02:10:25.000Z","CategoryId":2,"categoryId":null,"category":null}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T16:55:45.049] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=asdfasI&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': 'asdfasI', 'price.gt': '900' }
+}
+[2024-01-22T16:55:53.847] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=asdfasI&price.gt=900',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T16:57:47.903] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%', 'price.gt': '900' }
+}
+[2024-01-22T16:57:48.057] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.gt=900',
+  status: 200,
+  body: '{"items":[{"id":3,"name":"asdfas","description":"sadfsda","price":"1000.00","status":"active","created_at":"2016-06-23T02:10:25.000Z","updated_at":"2016-06-23T02:10:25.000Z","CategoryId":2,"categoryId":null,"category":null}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T16:57:49.981] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%', 'price.gt': '900' }
+}
+[2024-01-22T16:57:50.048] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.gt=900',
+  status: 200,
+  body: '{"items":[{"id":3,"name":"asdfas","description":"sadfsda","price":"1000.00","status":"active","created_at":"2016-06-23T02:10:25.000Z","updated_at":"2016-06-23T02:10:25.000Z","CategoryId":2,"categoryId":null,"category":null}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T16:57:51.386] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.gt=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%', 'price.gt': '900' }
+}
+[2024-01-22T16:57:51.439] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.gt=900',
+  status: 200,
+  body: '{"items":[{"id":3,"name":"asdfas","description":"sadfsda","price":"1000.00","status":"active","created_at":"2016-06-23T02:10:25.000Z","updated_at":"2016-06-23T02:10:25.000Z","CategoryId":2,"categoryId":null,"category":null}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T16:58:03.404] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.eq=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%', 'price.eq': '900' }
+}
+[2024-01-22T16:58:03.482] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.eq=900',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T16:58:16.135] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.eq=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%', 'price.eq': '900' }
+}
+[2024-01-22T16:58:16.269] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.eq=900',
+  status: 200,
+  body: '{"items":[{"id":3,"name":"asdfas","description":"sadfsda","price":"900.00","status":"active","created_at":"2016-06-23T02:10:25.000Z","updated_at":"2016-06-23T02:10:25.000Z","CategoryId":2,"categoryId":null,"category":null}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T16:58:59.961] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.eq=900&category_name=sdfas',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.iLike': '%asd%',
+    'price.eq': '900',
+    category_name: 'sdfas'
+  }
+}
+[2024-01-22T16:59:00.004] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.eq=900&category_name=sdfas',
+  status: 500,
+  body: `{"error":"Internal server error","message":"Invalid 'operator' parameter. "}`
+}
+[2024-01-22T17:02:18.120] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.eq=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%', 'price.eq': '900' }
+}
+[2024-01-22T17:02:18.253] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.eq=900',
+  status: 200,
+  body: '{"items":[{"id":3,"name":"asdfas","description":"sadfsda","price":"900.00","status":"active","created_at":"2016-06-23T02:10:25.000Z","updated_at":"2016-06-23T02:10:25.000Z","CategoryId":2,"categoryId":null,"category":null}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T17:03:01.047] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-22T17:03:01.293] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T17:03:19.578] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-22T17:03:19.731] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T17:04:14.839] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    CategoryId: 1
+  },
+  query: {}
+}
+[2024-01-22T17:04:15.036] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T17:20:41.524] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-22T17:20:41.576] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTkxODg0MSwiZXhwIjoxNzA1OTIyNDQxfQ.OvHRFQoYEpQtjZSO4oUUayTY38Mw0BDDbUrWw-5eB4U"}'
+}
+[2024-01-22T17:20:46.131] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.eq=900&category_name=sdfas',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.iLike': '%asd%',
+    'price.eq': '900',
+    category_name: 'sdfas'
+  }
+}
+[2024-01-22T17:20:46.153] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.eq=900&category_name=sdfas',
+  status: 500,
+  body: `{"error":"Internal server error","message":"Invalid 'operator' parameter. "}`
+}
+[2024-01-22T17:20:53.488] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.eq=900',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%', 'price.eq': '900' }
+}
+[2024-01-22T17:20:53.590] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&price.eq=900',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T17:21:00.468] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%' }
+}
+[2024-01-22T17:21:00.492] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T17:21:11.958] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%' }
+}
+[2024-01-22T17:21:12.842] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T17:23:23.937] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%' }
+}
+[2024-01-22T17:23:24.785] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T17:23:34.691] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    CategoryId: 1
+  },
+  query: {}
+}
+[2024-01-22T17:23:34.856] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T18:53:40.547] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-22T18:53:40.803] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTkyNDQyMCwiZXhwIjoxNzA1OTI4MDIwfQ.e5utJoi-oA4OjVEgww0w9_aVmV4Ll7XDWqe02dyvFFI"}'
+}
+[2024-01-22T18:53:47.383] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/category',
+  body: {
+    name: 'ExampleCategory',
+    description: 'This is an example category description.',
+    status: 'active'
+  },
+  query: {}
+}
+[2024-01-22T18:53:47.954] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/category',
+  status: 201,
+  body: '{"status":"active","id":1,"name":"ExampleCategory","description":"This is an example category description.","updated_at":"2024-01-22T11:53:47.475Z","created_at":"2024-01-22T11:53:47.475Z"}'
+}
+[2024-01-22T18:54:19.707] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-22T18:54:19.833] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 201,
+  body: '{"status":"active","id":2,"name":"Example Item","description":"This is an example item.","price":"149.99","CategoryId":null,"updated_at":"2024-01-22T11:54:19.717Z","created_at":"2024-01-22T11:54:19.717Z","categoryId":null}'
+}
+[2024-01-22T18:56:31.782] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-22T18:56:31.800] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 401,
+  body: '{"error":"Unauthorized: Invalid token"}'
+}
+[2024-01-22T18:57:13.345] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-22T18:57:13.362] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTkyNDQyMCwiZXhwIjoxNzA1OTI4MDIwfQ.e5utJoi-oA4OjVEgww0w9_aVmV4Ll7XDWqe02dyvFFI"}'
+}
+[2024-01-22T18:57:29.889] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-22T18:57:30.125] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 201,
+  body: '{"status":"active","id":3,"name":"Example Item","description":"This is an example item description.","price":"19.99","CategoryId":null,"updated_at":"2024-01-22T11:57:29.897Z","created_at":"2024-01-22T11:57:29.897Z","categoryId":null}'
+}
+[2024-01-22T19:06:48.387] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-22T19:06:48.452] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTkyNTIwOCwiZXhwIjoxNzA1OTI4ODA4fQ.J_XXT9RBD1mE1OzKmSyUAXiiqVbuxz0-iQmPcm1QQ4A"}'
+}
+[2024-01-22T19:07:34.749] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/category',
+  body: {
+    name: 'ExampleCategory',
+    description: 'This is an example category description.',
+    status: 'active'
+  },
+  query: {}
+}
+[2024-01-22T19:07:34.828] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/category',
+  status: 201,
+  body: '{"status":"active","id":2,"name":"ExampleCategory","description":"This is an example category description.","updated_at":"2024-01-22T12:07:34.760Z","created_at":"2024-01-22T12:07:34.760Z"}'
+}
+[2024-01-22T19:07:45.666] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 2
+  },
+  query: {}
+}
+[2024-01-22T19:07:45.728] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 201,
+  body: '{"status":"active","id":4,"name":"Example Item","description":"This is an example item description.","price":"19.99","CategoryId":null,"updated_at":"2024-01-22T12:07:45.672Z","created_at":"2024-01-22T12:07:45.672Z"}'
+}
+[2024-01-22T19:07:50.370] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 2
+  },
+  query: {}
+}
+[2024-01-22T19:07:50.387] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 201,
+  body: '{"status":"active","id":5,"name":"Example Item","description":"This is an example item description.","price":"19.99","CategoryId":null,"updated_at":"2024-01-22T12:07:50.376Z","created_at":"2024-01-22T12:07:50.376Z"}'
+}
+[2024-01-22T19:07:54.472] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 2
+  },
+  query: {}
+}
+[2024-01-22T19:07:54.497] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T19:09:42.705] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 2
+  },
+  query: {}
+}
+[2024-01-22T19:09:42.723] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T19:09:55.738] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 2
+  },
+  query: {}
+}
+[2024-01-22T19:09:55.768] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T19:10:15.167] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 2
+  },
+  query: {}
+}
+[2024-01-22T19:10:15.196] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T19:10:36.984] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 2
+  },
+  query: {}
+}
+[2024-01-22T19:10:46.160] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T19:11:13.672] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-22T19:11:13.722] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTkyNTQ3MywiZXhwIjoxNzA1OTI5MDczfQ.SzDRI_lY7TRAg7PPGQOCLmjnTOvThC7lCtjxmguWQ74"}'
+}
+[2024-01-22T19:11:20.344] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 2
+  },
+  query: {}
+}
+[2024-01-22T19:11:22.461] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T19:13:16.839] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 2
+  },
+  query: {}
+}
+[2024-01-22T19:13:19.772] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T19:15:56.486] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-22T19:15:56.513] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTkyNTc1NiwiZXhwIjoxNzA1OTI5MzU2fQ.8x6pzl1zyF4-gWVHrpjtwqit-Ew6ZHEF7oMDICumt44"}'
+}
+[2024-01-22T19:16:12.392] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 2
+  },
+  query: {}
+}
+[2024-01-22T19:16:15.373] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T20:16:58.703] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 2
+  },
+  query: {}
+}
+[2024-01-22T20:16:58.810] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 401,
+  body: '{"error":"Unauthorized: Invalid token"}'
+}
+[2024-01-22T20:17:08.478] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-22T20:17:08.498] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTkyOTQyOCwiZXhwIjoxNzA1OTMzMDI4fQ.HNzU0g0EKoJv1B8sSL6-_Iv9aGRl-qH1-4354-ldTSw"}'
+}
+[2024-01-22T20:17:13.318] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%' }
+}
+[2024-01-22T20:17:13.356] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  status: 500,
+  body: `{"error":"Internal server error","message":"Category is associated to Item using an alias. You've included an alias (category), but it does not match the alias(es) defined in your association (Category)."}`
+}
+[2024-01-22T20:26:32.884] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%' }
+}
+[2024-01-22T20:26:33.896] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T20:26:57.331] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/category',
+  body: {
+    name: 'ExampleCategory',
+    description: 'This is an example category description.',
+    status: 'active'
+  },
+  query: {}
+}
+[2024-01-22T20:26:57.574] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/category',
+  status: 201,
+  body: '{"status":"active","id":3,"name":"ExampleCategory","description":"This is an example category description.","updated_at":"2024-01-22T13:26:57.344Z","created_at":"2024-01-22T13:26:57.344Z"}'
+}
+[2024-01-22T20:27:07.215] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 3
+  },
+  query: {}
+}
+[2024-01-22T20:27:07.278] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 201,
+  body: '{"status":"active","id":6,"name":"Example Item","description":"This is an example item description.","price":"19.99","CategoryId":null,"updated_at":"2024-01-22T13:27:07.229Z","created_at":"2024-01-22T13:27:07.229Z"}'
+}
+[2024-01-22T20:27:13.571] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category',
+  body: {},
+  query: {}
+}
+[2024-01-22T20:27:13.595] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T20:27:23.141] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%' }
+}
+[2024-01-22T20:27:23.236] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T20:27:40.994] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {}
+}
+[2024-01-22T20:27:41.079] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 200,
+  body: '{"items":[{"id":2,"name":"Example Item","description":"This is an example item.","price":"149.99","status":"active","created_at":"2024-01-22T11:54:19.717Z","updated_at":"2024-01-22T11:54:19.717Z","CategoryId":null,"Category":null},{"id":3,"name":"Example Item","description":"This is an example item description.","price":"19.99","status":"active","created_at":"2024-01-22T11:57:29.897Z","updated_at":"2024-01-22T11:57:29.897Z","CategoryId":null,"Category":null},{"id":4,"name":"Example Item","description":"This is an example item description.","price":"19.99","status":"active","created_at":"2024-01-22T12:07:45.672Z","updated_at":"2024-01-22T12:07:45.672Z","CategoryId":null,"Category":null},{"id":5,"name":"Example Item","description":"This is an example item description.","price":"19.99","status":"active","created_at":"2024-01-22T12:07:50.376Z","updated_at":"2024-01-22T12:07:50.376Z","CategoryId":null,"Category":null},{"id":6,"name":"Example Item","description":"This is an example item description.","price":"19.99","status":"active","created_at":"2024-01-22T13:27:07.229Z","updated_at":"2024-01-22T13:27:07.229Z","CategoryId":null,"Category":null}],"totalItems":5,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T20:28:26.588] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    CategoryId: 1
+  },
+  query: {}
+}
+[2024-01-22T20:28:26.701] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 200,
+  body: '{"items":[{"id":2,"name":"Example Item","description":"This is an example item.","price":"149.99","status":"active","created_at":"2024-01-22T11:54:19.717Z","updated_at":"2024-01-22T11:54:19.717Z","CategoryId":null,"Category":null},{"id":3,"name":"Example Item","description":"This is an example item description.","price":"19.99","status":"active","created_at":"2024-01-22T11:57:29.897Z","updated_at":"2024-01-22T11:57:29.897Z","CategoryId":null,"Category":null},{"id":4,"name":"Example Item","description":"This is an example item description.","price":"19.99","status":"active","created_at":"2024-01-22T12:07:45.672Z","updated_at":"2024-01-22T12:07:45.672Z","CategoryId":null,"Category":null},{"id":5,"name":"Example Item","description":"This is an example item description.","price":"19.99","status":"active","created_at":"2024-01-22T12:07:50.376Z","updated_at":"2024-01-22T12:07:50.376Z","CategoryId":null,"Category":null},{"id":6,"name":"Example Item","description":"This is an example item description.","price":"19.99","status":"active","created_at":"2024-01-22T13:27:07.229Z","updated_at":"2024-01-22T13:27:07.229Z","CategoryId":null,"Category":null}],"totalItems":5,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T20:28:32.562] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    CategoryId: 1
+  },
+  query: {}
+}
+[2024-01-22T20:28:32.647] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 201,
+  body: '{"status":"active","id":7,"name":"Example Item","description":"This is an example item.","price":"149.99","CategoryId":1,"updated_at":"2024-01-22T13:28:32.567Z","created_at":"2024-01-22T13:28:32.567Z"}'
+}
+[2024-01-22T20:29:05.178] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    CategoryId: 3,
+    categoryId: 3
+  },
+  query: {}
+}
+[2024-01-22T20:29:05.289] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 201,
+  body: '{"status":"active","id":8,"name":"Example Item","description":"This is an example item.","price":"149.99","CategoryId":3,"updated_at":"2024-01-22T13:29:05.184Z","created_at":"2024-01-22T13:29:05.184Z"}'
+}
+[2024-01-22T20:29:54.760] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    CategoryId: 3,
+    categoryId: 3
+  },
+  query: {}
+}
+[2024-01-22T20:29:54.986] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T20:30:33.187] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    CategoryId: 3,
+    categoryId: 3
+  },
+  query: {}
+}
+[2024-01-22T20:30:33.401] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 201,
+  body: '{"status":"active","id":1,"name":"Example Item","description":"This is an example item.","price":"149.99","CategoryId":3,"updated_at":"2024-01-22T13:30:33.232Z","created_at":"2024-01-22T13:30:33.232Z"}'
+}
+[2024-01-22T20:30:47.931] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    CategoryId: 3,
+    categoryId: 3
+  },
+  query: {}
+}
+[2024-01-22T20:30:48.028] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item',
+  status: 200,
+  body: '{"items":[{"id":1,"name":"Example Item","description":"This is an example item.","price":"149.99","status":"active","created_at":"2024-01-22T13:30:33.232Z","updated_at":"2024-01-22T13:30:33.232Z","CategoryId":3,"Category":{"id":3,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"}}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T20:51:30.520] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%asd%' }
+}
+[2024-01-22T20:51:31.336] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%asd%&',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T20:51:55.495] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: { 'status.eq': 'active', 'name.iLike': '%Example%' }
+}
+[2024-01-22T20:51:55.772] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%',
+  status: 200,
+  body: '{"items":[{"id":1,"name":"Example Item","description":"This is an example item.","price":"149.99","status":"active","created_at":"2024-01-22T13:30:33.232Z","updated_at":"2024-01-22T13:30:33.232Z","CategoryId":3,"Category":{"id":3,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"}}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T20:56:01.980] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%&category_name=%Example%',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.iLike': '%Example%',
+    category_name: '%Example%'
+  }
+}
+[2024-01-22T20:56:02.046] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%&category_name=%Example%',
+  status: 500,
+  body: `{"error":"Internal server error","message":"Invalid 'operator' parameter. "}`
+}
+[2024-01-22T20:56:27.452] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%&category_name.eq=%Example%',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.iLike': '%Example%',
+    'category_name.eq': '%Example%'
+  }
+}
+[2024-01-22T20:56:27.868] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%&category_name.eq=%Example%',
+  status: 500,
+  body: '{"error":"Internal server error","message":"invalid input syntax for type integer: \\"%Example%\\""}'
+}
+[2024-01-22T20:58:19.307] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%&category_name.eq=%Example%',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.iLike': '%Example%',
+    'category_name.eq': '%Example%'
+  }
+}
+[2024-01-22T20:58:19.432] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%&category_name.eq=%Example%',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T20:58:40.997] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%&category_name.iLike=%Example%',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.iLike': '%Example%',
+    'category_name.iLike': '%Example%'
+  }
+}
+[2024-01-22T20:58:41.107] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%&category_name.iLike=%Example%',
+  status: 200,
+  body: '{"items":[{"id":1,"name":"Example Item","description":"This is an example item.","price":"149.99","status":"active","created_at":"2024-01-22T13:30:33.232Z","updated_at":"2024-01-22T13:30:33.232Z","CategoryId":3,"Category":{"id":3,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"}}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T20:58:52.101] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%&category_name.iLike=%Example8%',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.iLike': '%Example%',
+    'category_name.iLike': '%Example8%'
+  }
+}
+[2024-01-22T20:58:52.141] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%&category_name.iLike=%Example8%',
+  status: 200,
+  body: '{"items":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T20:58:57.364] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%&category_name.iLike=%Example%',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item.',
+    price: 149.99,
+    categoryId: 1
+  },
+  query: {
+    'status.eq': 'active',
+    'name.iLike': '%Example%',
+    'category_name.iLike': '%Example%'
+  }
+}
+[2024-01-22T20:58:57.390] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/item/filter?status.eq=active&name.iLike=%Example%&category_name.iLike=%Example%',
+  status: 200,
+  body: '{"items":[{"id":1,"name":"Example Item","description":"This is an example item.","price":"149.99","status":"active","created_at":"2024-01-22T13:30:33.232Z","updated_at":"2024-01-22T13:30:33.232Z","CategoryId":3,"Category":{"id":3,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"}}],"totalItems":1,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T22:40:51.541] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-22T22:40:51.653] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTkzODA1MSwiZXhwIjoxNzA1OTQxNjUxfQ.UB7Ge-rkfyFbTG39hZ5hvqnAm9QB8rZqxx4HNEqZr5g"}'
+}
+[2024-01-22T22:40:57.980] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category',
+  body: {},
+  query: {}
+}
+[2024-01-22T22:40:58.002] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T22:43:28.030] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category',
+  body: {},
+  query: {}
+}
+[2024-01-22T22:43:28.121] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category',
+  status: 200,
+  body: '{"categories":[{"id":1,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T11:53:47.475Z","updated_at":"2024-01-22T11:53:47.475Z"},{"id":2,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T12:07:34.760Z","updated_at":"2024-01-22T12:07:34.760Z"},{"id":3,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"}],"totalItems":3,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T22:44:55.380] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category',
+  body: {},
+  query: {}
+}
+[2024-01-22T22:44:55.434] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category',
+  status: 200,
+  body: '{"categories":[{"id":1,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T11:53:47.475Z","updated_at":"2024-01-22T11:53:47.475Z"},{"id":2,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T12:07:34.760Z","updated_at":"2024-01-22T12:07:34.760Z"},{"id":3,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"}],"totalItems":3,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T22:45:30.113] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category',
+  body: {},
+  query: {}
+}
+[2024-01-22T22:45:30.259] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category',
+  status: 200,
+  body: '{"categories":[{"id":1,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T11:53:47.475Z","updated_at":"2024-01-22T11:53:47.475Z"},{"id":2,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T12:07:34.760Z","updated_at":"2024-01-22T12:07:34.760Z"},{"id":3,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":4,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T12:07:34.760Z","updated_at":"2024-01-22T12:07:34.760Z"},{"id":5,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":6,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":7,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":8,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":9,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":10,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":11,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":12,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":13,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":14,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":15,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":16,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":17,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"}],"totalItems":17,"totalPages":1,"currentPage":1}'
+}
+[2024-01-22T22:46:39.296] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category',
+  body: {},
+  query: {}
+}
+[2024-01-22T22:48:38.533] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category',
+  body: {},
+  query: {}
+}
+[2024-01-22T22:48:42.601] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category',
+  status: 200,
+  body: '{"categories":[{"id":1,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T11:53:47.475Z","updated_at":"2024-01-22T11:53:47.475Z"},{"id":2,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T12:07:34.760Z","updated_at":"2024-01-22T12:07:34.760Z"},{"id":3,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":4,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T12:07:34.760Z","updated_at":"2024-01-22T12:07:34.760Z"},{"id":5,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":6,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":7,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":8,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":9,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":10,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"}],"totalItems":17,"totalPages":2,"currentPage":1}'
+}
+[2024-01-22T22:49:00.149] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category?page=2',
+  body: {},
+  query: { page: '2' }
+}
+[2024-01-22T22:49:02.344] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category?page=2',
+  status: 200,
+  body: '{"categories":[{"id":11,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":12,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":13,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":14,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":15,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":16,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":17,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"}],"totalItems":17,"totalPages":2,"currentPage":2}'
+}
+[2024-01-22T22:49:08.953] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category?page=3',
+  body: {},
+  query: { page: '3' }
+}
+[2024-01-22T22:49:10.967] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category?page=3',
+  status: 200,
+  body: '{"categories":[],"totalItems":17,"totalPages":2,"currentPage":3}'
+}
+[2024-01-22T22:53:56.997] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category/filter?name.iLke=%22%Item%%22%20',
+  body: {},
+  query: { 'name.iLke': '%22%Item%%22%20' }
+}
+[2024-01-22T22:53:57.179] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category/filter?name.iLke=%22%Item%%22%20',
+  status: 500,
+  body: '{"error":"Internal server error"}'
+}
+[2024-01-22T22:54:08.386] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category/filter?name.iLike=%22%Item%%22%20',
+  body: {},
+  query: { 'name.iLike': '%22%Item%%22%20' }
+}
+[2024-01-22T22:54:08.493] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category/filter?name.iLike=%22%Item%%22%20',
+  status: 200,
+  body: '{"categories":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-22T23:15:20.747] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category/filter?name.iLike=%22%Item%%22&name.eq=xxx%20',
+  body: {},
+  query: { 'name.iLike': '%22%Item%%22', 'name.eq': 'xxx ' }
+}
+[2024-01-22T23:15:29.081] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category/filter?name.iLike=%22%Item%%22&name.eq=xxx%20',
+  status: 200,
+  body: '{"categories":[],"totalItems":0,"totalPages":0,"currentPage":1}'
+}
+[2024-01-23T00:41:02.361] [INFO] default - {
+  message: 'Request received',
+  method: 'OPTIONS',
+  url: '/api/login',
+  body: {},
+  query: {}
+}
+[2024-01-23T00:41:04.076] [INFO] default - {
+  message: 'Response sent',
+  method: 'OPTIONS',
+  url: '/api/login',
+  status: 200,
+  body: 'POST'
+}
+[2024-01-23T00:53:12.656] [INFO] default - {
+  message: 'Request received',
+  method: 'OPTIONS',
+  url: '/api/login',
+  body: {},
+  query: {}
+}
+[2024-01-23T00:53:12.757] [INFO] default - {
+  message: 'Response sent',
+  method: 'OPTIONS',
+  url: '/api/login',
+  status: 200,
+  body: 'POST'
+}
+[2024-01-23T00:53:29.389] [INFO] default - {
+  message: 'Request received',
+  method: 'OPTIONS',
+  url: '/api/login',
+  body: {},
+  query: {}
+}
+[2024-01-23T00:53:29.397] [INFO] default - {
+  message: 'Response sent',
+  method: 'OPTIONS',
+  url: '/api/login',
+  status: 200,
+  body: 'POST'
+}
+[2024-01-23T00:53:56.806] [INFO] default - {
+  message: 'Request received',
+  method: 'OPTIONS',
+  url: '/api/login',
+  body: {},
+  query: {}
+}
+[2024-01-23T00:53:56.814] [INFO] default - {
+  message: 'Response sent',
+  method: 'OPTIONS',
+  url: '/api/login',
+  status: 200,
+  body: 'POST'
+}
+[2024-01-23T00:53:59.140] [INFO] default - {
+  message: 'Request received',
+  method: 'OPTIONS',
+  url: '/api/login',
+  body: {},
+  query: {}
+}
+[2024-01-23T00:53:59.149] [INFO] default - {
+  message: 'Response sent',
+  method: 'OPTIONS',
+  url: '/api/login',
+  status: 200,
+  body: 'POST'
+}
+[2024-01-23T00:54:09.815] [INFO] default - {
+  message: 'Request received',
+  method: 'OPTIONS',
+  url: '/api/login',
+  body: {},
+  query: {}
+}
+[2024-01-23T00:54:09.823] [INFO] default - {
+  message: 'Response sent',
+  method: 'OPTIONS',
+  url: '/api/login',
+  status: 200,
+  body: 'POST'
+}
+[2024-01-23T00:54:10.497] [INFO] default - {
+  message: 'Request received',
+  method: 'OPTIONS',
+  url: '/api/login',
+  body: {},
+  query: {}
+}
+[2024-01-23T00:54:10.525] [INFO] default - {
+  message: 'Response sent',
+  method: 'OPTIONS',
+  url: '/api/login',
+  status: 200,
+  body: 'POST'
+}
+[2024-01-23T00:54:10.706] [INFO] default - {
+  message: 'Request received',
+  method: 'OPTIONS',
+  url: '/api/login',
+  body: {},
+  query: {}
+}
+[2024-01-23T00:54:10.718] [INFO] default - {
+  message: 'Response sent',
+  method: 'OPTIONS',
+  url: '/api/login',
+  status: 200,
+  body: 'POST'
+}
+[2024-01-23T00:54:40.708] [INFO] default - {
+  message: 'Request received',
+  method: 'OPTIONS',
+  url: '/api/login',
+  body: {},
+  query: {}
+}
+[2024-01-23T00:54:40.717] [INFO] default - {
+  message: 'Response sent',
+  method: 'OPTIONS',
+  url: '/api/login',
+  status: 200,
+  body: 'POST'
+}
+[2024-01-23T00:54:41.689] [INFO] default - {
+  message: 'Request received',
+  method: 'OPTIONS',
+  url: '/api/login',
+  body: {},
+  query: {}
+}
+[2024-01-23T00:54:41.692] [INFO] default - {
+  message: 'Response sent',
+  method: 'OPTIONS',
+  url: '/api/login',
+  status: 200,
+  body: 'POST'
+}
+[2024-01-23T00:54:57.630] [INFO] default - {
+  message: 'Request received',
+  method: 'OPTIONS',
+  url: '/api/login',
+  body: {},
+  query: {}
+}
+[2024-01-23T00:54:57.633] [INFO] default - {
+  message: 'Response sent',
+  method: 'OPTIONS',
+  url: '/api/login',
+  status: 200,
+  body: 'POST'
+}
+[2024-01-23T00:57:51.103] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T00:57:51.143] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTk0NjI3MSwiZXhwIjoxNzA1OTQ5ODcxfQ.ThQm3uVzhIpp0RbPBiBDQ5PYahGAnPbE-S1T4csLGew"}'
+}

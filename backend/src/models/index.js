@@ -4,11 +4,9 @@ const Item = require("../models/item");
 const associated = () => {
      Category.hasMany(Item, {
           as: "items",
+          foreignKey: "id",
      });
 
-     Item.belongsTo(Category, {
-          foreignKey: "categoryId",
-          as: "category",
-     });
+     Item.belongsTo(Category);
 };
 module.exports = associated;

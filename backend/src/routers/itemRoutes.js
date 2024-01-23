@@ -7,6 +7,8 @@ const itemController = require("../controllers/itemController");
 // Get all items with optional filtering and pagination
 router.get("/", auth, itemController.getAllItems);
 
+// Filter items by price and category with pagination
+router.get("/filter", auth, itemController.getFilter);
 // Get item by ID
 router.get("/:id", auth, itemController.getItemById);
 

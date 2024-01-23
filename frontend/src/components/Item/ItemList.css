@@ -1,0 +1,39 @@
+/* ItemList.css */
+
+.container {
+     margin: 20px;
+}
+
+h2 {
+     color: #333;
+}
+
+.addButton {
+     margin-bottom: 10px;
+}
+
+.pagination {
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+}
+
+.pagination li {
+     margin: 0 5px;
+}
+
+.pagination button {
+     cursor: pointer;
+     padding: 5px 10px;
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     border-radius: 3px;
+}
+
+.pagination button:hover {
+     background-color: #0056b3;
+}
+
+/* Add more styles as needed */
