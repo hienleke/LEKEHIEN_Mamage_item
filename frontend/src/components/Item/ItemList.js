@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import ItemForm from "./ItemForm";
 import "./ItemList.css";
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Button } from "@mui/material";
@@ -56,9 +56,12 @@ const ItemList = () => {
      const paginate = (pageNumber) => {
           setCurrentPage(pageNumber);
      };
+     const fetchBusinesses = useCallback(() => {
+          fetchItems();
+     }, []);
 
      useEffect(() => {
-          fetchItems();
+          fetchBusinesses();
      }, [currentPage]);
 
      return (

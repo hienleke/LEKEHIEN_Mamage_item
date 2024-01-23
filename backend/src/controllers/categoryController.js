@@ -55,13 +55,14 @@ const categoryController = {
 
      updateCategory: async (req, res) => {
           const categoryId = req.params.id;
-          const { name, description } = req.body;
+          const { name, description, status } = req.body;
           try {
                const category = await Category.findByPk(categoryId);
                if (!category) {
                     return res.status(404).json({ error: "Category not found" });
                }
-               await category.update({ name, description });
+               if (status != "active" || status != "inactive") return res.status(404).json({ error: "status invalid " });
+               await category.update({ name, description, status });
                res.status(200).json(category);
           } catch (error) {
                console.error("Error updating category:", error);

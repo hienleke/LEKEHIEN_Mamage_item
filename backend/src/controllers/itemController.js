@@ -4,7 +4,6 @@ const Category = require("../models/category");
 const Item = require("../models/item");
 const { buildWhereItemClause } = require("../utils/filterClause");
 const config = require("../utils/config");
-
 const itemController = {
      getAllItems: async (req, res) => {
           try {
@@ -65,13 +64,14 @@ const itemController = {
 
      updateItem: async (req, res) => {
           const itemId = req.params.id;
-          const { name, description, price, categoryId } = req.body;
+          const { name, description, price, categoryId, status } = req.body;
           try {
                const item = await Item.findByPk(itemId);
                if (!item) {
                     return res.status(404).json({ error: "Item not found" });
                }
-               await item.update({ name, description, price, categoryId });
+               if (status != "active" || status != "inactive") return res.status(404).json({ error: "status invalid " });
+               await item.update({ name, description, price, categoryId, status });
                res.status(200).json(item);
           } catch (error) {
                console.error("Error updating item:", error);

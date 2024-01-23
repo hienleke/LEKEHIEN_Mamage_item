@@ -2850,3 +2850,603 @@
   status: 200,
   body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNTk0NjI3MSwiZXhwIjoxNzA1OTQ5ODcxfQ.ThQm3uVzhIpp0RbPBiBDQ5PYahGAnPbE-S1T4csLGew"}'
 }
+[2024-01-23T19:19:31.843] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T19:19:31.886] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T19:21:54.370] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T19:21:54.436] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T19:22:02.565] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T19:22:02.575] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T19:22:03.737] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T19:22:03.744] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T19:22:04.499] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T19:22:04.503] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T19:23:08.111] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T19:23:08.123] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T19:25:02.404] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T19:25:02.409] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T19:30:05.792] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T19:30:05.857] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T19:33:03.440] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T19:33:03.522] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T21:27:24.498] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T21:27:24.629] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T21:33:34.394] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T21:33:34.419] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T21:41:02.703] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T21:41:02.783] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T21:46:17.040] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T21:46:17.117] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T22:06:12.076] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/auth/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T22:06:12.195] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/auth/login',
+  status: 404,
+  body: ''
+}
+[2024-01-23T22:17:41.152] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T22:17:41.300] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNjAyMzA2MSwiZXhwIjoxNzA2MDI2NjYxfQ.oahLK93C9sRlp2Z2qXu0sm0aAJ1amB8oqYL6ovHUik8"}'
+}
+[2024-01-23T22:17:41.432] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/comments',
+  body: {},
+  query: {}
+}
+[2024-01-23T22:17:41.473] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/comments',
+  status: 404,
+  body: ''
+}
+[2024-01-23T22:17:41.644] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/comment',
+  body: {
+    comment: 'Test comment',
+    userId: 'user123',
+    username: 'testuser',
+    channelId: 'channel123'
+  },
+  query: {}
+}
+[2024-01-23T22:17:41.686] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/comment',
+  status: 404,
+  body: ''
+}
+[2024-01-23T22:17:41.789] [INFO] default - {
+  message: 'Request received',
+  method: 'PUT',
+  url: '/api/comment/status/invalid',
+  body: { id: '659ae4c2921c4553baba8ea7' },
+  query: {}
+}
+[2024-01-23T22:17:41.806] [INFO] default - {
+  message: 'Response sent',
+  method: 'PUT',
+  url: '/api/comment/status/invalid',
+  status: 404,
+  body: ''
+}
+[2024-01-23T22:17:47.251] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T22:17:47.286] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNjAyMzA2NywiZXhwIjoxNzA2MDI2NjY3fQ.4IaUC80TPr7lTHYdb-Iwum7KWbq0f_rNaJIkb7a7pJ0"}'
+}
+[2024-01-23T22:17:47.389] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/comments',
+  body: {},
+  query: {}
+}
+[2024-01-23T22:17:47.422] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/comments',
+  status: 404,
+  body: ''
+}
+[2024-01-23T22:17:47.586] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/comment',
+  body: {
+    comment: 'Test comment',
+    userId: 'user123',
+    username: 'testuser',
+    channelId: 'channel123'
+  },
+  query: {}
+}
+[2024-01-23T22:17:47.602] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/comment',
+  status: 404,
+  body: ''
+}
+[2024-01-23T22:17:47.772] [INFO] default - {
+  message: 'Request received',
+  method: 'PUT',
+  url: '/api/comment/status/invalid',
+  body: { id: '659ae4c2921c4553baba8ea7' },
+  query: {}
+}
+[2024-01-23T22:17:47.783] [INFO] default - {
+  message: 'Response sent',
+  method: 'PUT',
+  url: '/api/comment/status/invalid',
+  status: 404,
+  body: ''
+}
+[2024-01-23T22:24:17.008] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T22:24:17.083] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNjAyMzQ1NywiZXhwIjoxNzA2MDI3MDU3fQ.TrzDeEDccfwlVPcDoUIzmLjISDws-a6b87o7z2c45Tk"}'
+}
+[2024-01-23T22:24:17.179] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category',
+  body: {},
+  query: {}
+}
+[2024-01-23T22:24:18.018] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category',
+  status: 200,
+  body: '{"categories":[{"id":1,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T11:53:47.475Z","updated_at":"2024-01-22T11:53:47.475Z"},{"id":2,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T12:07:34.760Z","updated_at":"2024-01-22T12:07:34.760Z"},{"id":3,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":4,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T12:07:34.760Z","updated_at":"2024-01-22T12:07:34.760Z"},{"id":5,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":6,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":7,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":8,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":9,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":10,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"}],"totalItems":17,"totalPages":2,"currentPage":1}'
+}
+[2024-01-23T22:24:18.132] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/category',
+  body: {
+    name: 'Example Category',
+    description: 'This is an example category description.',
+    status: 'active'
+  },
+  query: {}
+}
+[2024-01-23T22:24:18.307] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/category',
+  status: 201,
+  body: '{"status":"active","id":18,"name":"Example Category","description":"This is an example category description.","updated_at":"2024-01-23T15:24:18.143Z","created_at":"2024-01-23T15:24:18.143Z"}'
+}
+[2024-01-23T22:24:22.862] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T22:24:22.881] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNjAyMzQ2MiwiZXhwIjoxNzA2MDI3MDYyfQ.OWN_VxDn2rrCMN-vZZOOBesO4ZvY0Z_-ORkNUqTVjsU"}'
+}
+[2024-01-23T22:24:22.934] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/iteam',
+  body: {},
+  query: {}
+}
+[2024-01-23T22:24:22.953] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/iteam',
+  status: 404,
+  body: ''
+}
+[2024-01-23T22:24:23.043] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 3
+  },
+  query: {}
+}
+[2024-01-23T22:24:23.485] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 201,
+  body: '{"status":"active","id":17,"name":"Example Item","description":"This is an example item description.","price":"19.99","CategoryId":null,"updated_at":"2024-01-23T15:24:23.063Z","created_at":"2024-01-23T15:24:23.063Z"}'
+}
+[2024-01-23T22:25:19.265] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T22:25:19.298] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNjAyMzUxOSwiZXhwIjoxNzA2MDI3MTE5fQ.yKIWtmhRXmVfCAcXt4GsjI0zknbKztO-kQdWMu58KUY"}'
+}
+[2024-01-23T22:25:19.384] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category',
+  body: {},
+  query: {}
+}
+[2024-01-23T22:25:19.743] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category',
+  status: 200,
+  body: '{"categories":[{"id":1,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T11:53:47.475Z","updated_at":"2024-01-22T11:53:47.475Z"},{"id":2,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T12:07:34.760Z","updated_at":"2024-01-22T12:07:34.760Z"},{"id":3,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":4,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T12:07:34.760Z","updated_at":"2024-01-22T12:07:34.760Z"},{"id":5,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":6,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":7,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":8,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":9,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":10,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"}],"totalItems":18,"totalPages":2,"currentPage":1}'
+}
+[2024-01-23T22:25:19.886] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/category',
+  body: {
+    name: 'Example Category',
+    description: 'This is an example category description.',
+    status: 'active'
+  },
+  query: {}
+}
+[2024-01-23T22:25:19.969] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/category',
+  status: 201,
+  body: '{"status":"active","id":19,"name":"Example Category","description":"This is an example category description.","updated_at":"2024-01-23T15:25:19.896Z","created_at":"2024-01-23T15:25:19.896Z"}'
+}
+[2024-01-23T22:25:22.792] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T22:25:22.816] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNjAyMzUyMiwiZXhwIjoxNzA2MDI3MTIyfQ.3VD3iHWxB5LzPGJkbWGY6CyDRXeQa7KHuvApER8oUdA"}'
+}
+[2024-01-23T22:25:22.913] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/iteam',
+  body: {},
+  query: {}
+}
+[2024-01-23T22:25:22.960] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/iteam',
+  status: 404,
+  body: ''
+}
+[2024-01-23T22:25:23.072] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 3
+  },
+  query: {}
+}
+[2024-01-23T22:25:23.293] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 201,
+  body: '{"status":"active","id":18,"name":"Example Item","description":"This is an example item description.","price":"19.99","CategoryId":null,"updated_at":"2024-01-23T15:25:23.097Z","created_at":"2024-01-23T15:25:23.097Z"}'
+}
+[2024-01-23T22:26:50.592] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T22:26:50.660] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNjAyMzYxMCwiZXhwIjoxNzA2MDI3MjEwfQ.ideVRTpsV4JDuk75v3ecZSABQ61eN6zvDxBZxAuRSAw"}'
+}
+[2024-01-23T22:26:50.778] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/category',
+  body: {},
+  query: {}
+}
+[2024-01-23T22:26:51.352] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/category',
+  status: 200,
+  body: '{"categories":[{"id":1,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T11:53:47.475Z","updated_at":"2024-01-22T11:53:47.475Z"},{"id":2,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T12:07:34.760Z","updated_at":"2024-01-22T12:07:34.760Z"},{"id":3,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":4,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T12:07:34.760Z","updated_at":"2024-01-22T12:07:34.760Z"},{"id":5,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":6,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":7,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":8,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":9,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"},{"id":10,"name":"ExampleCategory","description":"This is an example category description.","status":"active","created_at":"2024-01-22T13:26:57.344Z","updated_at":"2024-01-22T13:26:57.344Z"}],"totalItems":19,"totalPages":2,"currentPage":1}'
+}
+[2024-01-23T22:26:51.456] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/category',
+  body: {
+    name: 'Example Category',
+    description: 'This is an example category description.',
+    status: 'active'
+  },
+  query: {}
+}
+[2024-01-23T22:26:51.630] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/category',
+  status: 201,
+  body: '{"status":"active","id":20,"name":"Example Category","description":"This is an example category description.","updated_at":"2024-01-23T15:26:51.470Z","created_at":"2024-01-23T15:26:51.470Z"}'
+}
+[2024-01-23T22:26:54.816] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/login',
+  body: { username: 'hienle', password: 'hienlefeedback' },
+  query: {}
+}
+[2024-01-23T22:26:54.846] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/login',
+  status: 200,
+  body: '{"success":true,"status":"Login successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGllbmxlIn0sImlhdCI6MTcwNjAyMzYxNCwiZXhwIjoxNzA2MDI3MjE0fQ.M1Tj6lJ5ifUbvHjSa8G8oOkLDJFLvWvMxFqYmmmcn3E"}'
+}
+[2024-01-23T22:26:54.924] [INFO] default - {
+  message: 'Request received',
+  method: 'GET',
+  url: '/api/iteam',
+  body: {},
+  query: {}
+}
+[2024-01-23T22:26:54.952] [INFO] default - {
+  message: 'Response sent',
+  method: 'GET',
+  url: '/api/iteam',
+  status: 404,
+  body: ''
+}
+[2024-01-23T22:26:55.044] [INFO] default - {
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/item',
+  body: {
+    name: 'Example Item',
+    description: 'This is an example item description.',
+    price: 19.99,
+    status: 'active',
+    categoryId: 3
+  },
+  query: {}
+}
+[2024-01-23T22:26:55.342] [INFO] default - {
+  message: 'Response sent',
+  method: 'POST',
+  url: '/api/item',
+  status: 201,
+  body: '{"status":"active","id":19,"name":"Example Item","description":"This is an example item description.","price":"19.99","CategoryId":null,"updated_at":"2024-01-23T15:26:55.066Z","created_at":"2024-01-23T15:26:55.066Z"}'
+}
